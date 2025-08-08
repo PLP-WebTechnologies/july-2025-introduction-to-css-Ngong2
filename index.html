@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Box Size Model & Kakuma Camp</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Kakuma Refugee Camp</h1>
+    <p class="subtitle">A Glimpse into Life and Commerce in Kakuma</p>
+  </header>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Camp Overview</a></li>
+      <li><a href="#">Hong Kong Market</a></li>
+      <li><a href="#">Community Stories</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+
+    <section class="section-box">
+      <h2>About Kakuma Refugee Camp</h2>
+      <p>Kakuma Refugee Camp, established in 1992...</p>
+      <p>The camp is administered by UNHCR...</p>
+      <p>Education plays a critical role...</p>
+    </section>
+
+    <section class="section-box">
+      <h2>Hong Kong Market in Kakuma</h2>
+      <p>The Hong Kong Market is one of the most popular...</p>
+      <p>At the market, you can find a wide range of goods...</p>
+      <p>It also acts as a cultural melting pot...</p>
+    </section>
+
+    <section class="section-box">
+      <h2>The Role of Commerce in Camp Life</h2>
+      <p>Refugee-run businesses are essential...</p>
+      <p>Programs from organizations like UNHCR...</p>
+      <p>In places like the Hong Kong Market...</p>
+    </section>
+
+    <section class="section-box">
+      <h2>Challenges and Resilience</h2>
+      <p>Despite progress, Kakuma still faces...</p>
+      <p>Many youth are using digital technology...</p>
+    </section>
+
+    <section class="section-box">
+      <h2>Box Model Demonstration</h2>
+
+      <!-- Ordered List -->
+      <h3>Ordered List - Weekdays</h3>
+      <ol>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+      </ol>
+
+      <!-- Unordered List -->
+      <h3>Unordered List - Weekend</h3>
+      <ul>
+        <li>Saturday</li>
+        <li>Sunday</li>
+      </ul>
+
+      <!-- Definition List -->
+      <h3>Definition List - Web Terms</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language...</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets...</dd>
+        <dt>JavaScript</dt>
+        <dd>A scripting language...</dd>
+      </dl>
+
+      <!-- Table -->
+      <h3>Student Information Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <th>Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ngong</td><td>Male</td><td>South Sudan</td><td>Web Development</td></tr>
+          <tr><td>Aluong</td><td>Male</td><td>South Sudan</td><td>Cybersecurity</td></tr>
+          <tr><td>Eddy</td><td>Male</td><td>Kenya</td><td>UI/UX Design</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Media -->
+      <h3>Embedded Video</h3>
+      <video width="500" height="300" controls>
+        <source src="https://videos.pexels.com/video-files/5045649/5045649-hd_1080_1920_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Learn HTML Basics - YouTube</h3>
+      <iframe width="500" height="300" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="HTML Tutorial" frameborder="0" allowfullscreen></iframe>
+      <h3>Images</h3>
+      <img src="https://images.pexels.com/photos/33268892/pexels-photo-33268892.jpeg" alt="Sample Image" width="400">
+      <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Laptop" width="400">
+
+    </section>
+
+    <!-- Form -->
+    <section class="section-box">
+      <h2>Application Form</h2>
+      <form action="submit-form.php" method="POST" enctype="multipart/form-data">
+        <h3>Personal Details</h3>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="0712345678"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+          <option value="">--Select--</option>
+          <option value="South Sudan">South Sudan</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Uganda">Uganda</option>
+        </select><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML"><label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS"><label for="css">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript"><label for="js">JavaScript</label><br><br>
+
+        <label for="cv">Upload CV:</label><br>
+        <input type="file" id="cv" name="cv" accept=".pdf"><br><br>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" cols="30" rows="5" placeholder="Write your bio..."></textarea><br><br>
+
+        <input type="hidden" name="form_id" value="12345">
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Kakuma Stories | CSS Box Model Practice</p>
+  </footer>
+
+</body>
+</html>

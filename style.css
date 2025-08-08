@@ -1,0 +1,189 @@
+/* === General styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Body === */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+}
+
+/* === Header === */
+.main-header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.main-header .subtitle {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+/* === Navigation === */
+.navigation {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* === Main Content Sections === */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* === Box Model Section Boxes === */
+.section-box {
+  background-color: #e6f0ff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #99c2ff;
+  border-radius: 8px;
+}
+
+/* === Headings === */
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #1a73e8;
+}
+
+h3 {
+  color: #3366cc;
+  margin-top: 20px;
+}
+
+/* === Lists === */
+ol, ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+dl {
+  margin-left: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* === Table Styling === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #999;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #cce0ff;
+}
+
+/* === Media Section === */
+video, iframe, img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* === Form Section === */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #155ab6;
+}
+
+/* === Footer === */
+.main-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 5px;
+}
