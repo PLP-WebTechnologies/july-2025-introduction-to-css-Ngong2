@@ -1,172 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Box Size Model & Kakuma Camp</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model Demo</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 class="page-title">Welcome to My Styled Website</h1>
+        <nav class="navigation">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
 
-  <header class="main-header">
-    <h1>Kakuma Refugee Camp</h1>
-    <p class="subtitle">A Glimpse into Life and Commerce in Kakuma</p>
-  </header>
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h2 class="hero-title">CSS Box Model in Action</h2>
+            <p class="hero-description">
+                This page demonstrates the fundamental concepts of CSS styling and the Box Model. 
+                Notice how margins, padding, and borders create spacing and visual hierarchy.
+            </p>
+            <button class="cta-button">Get Started</button>
+        </section>
 
-  <nav class="navigation">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Camp Overview</a></li>
-      <li><a href="#">Hong Kong Market</a></li>
-      <li><a href="#">Community Stories</a></li>
-    </ul>
-  </nav>
+        <!-- Content Cards -->
+        <section class="content-section">
+            <h2 class="section-title">Understanding the Box Model</h2>
+            
+            <div class="card-container">
+                <div class="card content-box">
+                    <h3 class="card-title">Content Area</h3>
+                    <p class="card-text">
+                        This is the actual content of the element. The width and height properties 
+                        define the size of this area.
+                    </p>
+                </div>
 
-  <main class="content">
+                <div class="card padding-box">
+                    <h3 class="card-title">Padding</h3>
+                    <p class="card-text">
+                        Padding creates space between the content and the border. It's inside the element 
+                        and takes on the background color.
+                    </p>
+                </div>
 
-    <section class="section-box">
-      <h2>About Kakuma Refugee Camp</h2>
-      <p>Kakuma Refugee Camp, established in 1992...</p>
-      <p>The camp is administered by UNHCR...</p>
-      <p>Education plays a critical role...</p>
-    </section>
+                <div class="card border-box">
+                    <h3 class="card-title">Border</h3>
+                    <p class="card-text">
+                        The border wraps around the padding and content. You can style its width, 
+                        color, and style properties.
+                    </p>
+                </div>
 
-    <section class="section-box">
-      <h2>Hong Kong Market in Kakuma</h2>
-      <p>The Hong Kong Market is one of the most popular...</p>
-      <p>At the market, you can find a wide range of goods...</p>
-      <p>It also acts as a cultural melting pot...</p>
-    </section>
+                <div class="card margin-box">
+                    <h3 class="card-title">Margin</h3>
+                    <p class="card-text">
+                        Margin creates space outside the border, separating this element from 
+                        other elements. It's always transparent.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section class="section-box">
-      <h2>The Role of Commerce in Camp Life</h2>
-      <p>Refugee-run businesses are essential...</p>
-      <p>Programs from organizations like UNHCR...</p>
-      <p>In places like the Hong Kong Market...</p>
-    </section>
+        <!-- Typography Section -->
+        <section class="typography-section">
+            <h2 class="section-title">Typography & Styling</h2>
+            <div class="text-examples">
+                <p class="large-text">This is large text with custom styling.</p>
+                <p class="regular-text">This is regular paragraph text with standard formatting.</p>
+                <p class="small-text">This is smaller text often used for captions or footnotes.</p>
+                <p class="highlighted-text">This text has a highlighted background and border.</p>
+            </div>
+        </section>
 
-    <section class="section-box">
-      <h2>Challenges and Resilience</h2>
-      <p>Despite progress, Kakuma still faces...</p>
-      <p>Many youth are using digital technology...</p>
-    </section>
+        <!-- Interactive Elements -->
+        <section class="interactive-section">
+            <h2 class="section-title">Interactive Elements</h2>
+            <div class="button-group">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-outline">Outline Button</button>
+            </div>
+        </section>
+    </div>
 
-    <section class="section-box">
-      <h2>Box Model Demonstration</h2>
-
-      <!-- Ordered List -->
-      <h3>Ordered List - Weekdays</h3>
-      <ol>
-        <li>Monday</li>
-        <li>Tuesday</li>
-        <li>Wednesday</li>
-        <li>Thursday</li>
-        <li>Friday</li>
-      </ol>
-
-      <!-- Unordered List -->
-      <h3>Unordered List - Weekend</h3>
-      <ul>
-        <li>Saturday</li>
-        <li>Sunday</li>
-      </ul>
-
-      <!-- Definition List -->
-      <h3>Definition List - Web Terms</h3>
-      <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language...</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets...</dd>
-        <dt>JavaScript</dt>
-        <dd>A scripting language...</dd>
-      </dl>
-
-      <!-- Table -->
-      <h3>Student Information Table</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>First Name</th>
-            <th>Gender</th>
-            <th>Country</th>
-            <th>Course</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Ngong</td><td>Male</td><td>South Sudan</td><td>Web Development</td></tr>
-          <tr><td>Aluong</td><td>Male</td><td>South Sudan</td><td>Cybersecurity</td></tr>
-          <tr><td>Eddy</td><td>Male</td><td>Kenya</td><td>UI/UX Design</td></tr>
-        </tbody>
-      </table>
-
-      <!-- Media -->
-      <h3>Embedded Video</h3>
-      <video width="500" height="300" controls>
-        <source src="https://videos.pexels.com/video-files/5045649/5045649-hd_1080_1920_25fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <h3>Learn HTML Basics - YouTube</h3>
-      <iframe width="500" height="300" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="HTML Tutorial" frameborder="0" allowfullscreen></iframe>
-      <h3>Images</h3>
-      <img src="https://images.pexels.com/photos/33268892/pexels-photo-33268892.jpeg" alt="Sample Image" width="400">
-      <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Laptop" width="400">
-
-    </section>
-
-    <!-- Form -->
-    <section class="section-box">
-      <h2>Application Form</h2>
-      <form action="submit-form.php" method="POST" enctype="multipart/form-data">
-        <h3>Personal Details</h3>
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
-
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="0712345678"><br><br>
-
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age"><br><br>
-
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob"><br><br>
-
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br><br>
-
-        <label for="country">Country:</label><br>
-        <select id="country" name="country">
-          <option value="">--Select--</option>
-          <option value="South Sudan">South Sudan</option>
-          <option value="Kenya">Kenya</option>
-          <option value="Uganda">Uganda</option>
-        </select><br><br>
-
-        <label>Skills:</label><br>
-        <input type="checkbox" id="html" name="skills" value="HTML"><label for="html">HTML</label>
-        <input type="checkbox" id="css" name="skills" value="CSS"><label for="css">CSS</label>
-        <input type="checkbox" id="js" name="skills" value="JavaScript"><label for="js">JavaScript</label><br><br>
-
-        <label for="cv">Upload CV:</label><br>
-        <input type="file" id="cv" name="cv" accept=".pdf"><br><br>
-
-        <label for="bio">Short Bio:</label><br>
-        <textarea id="bio" name="bio" cols="30" rows="5" placeholder="Write your bio..."></textarea><br><br>
-
-        <input type="hidden" name="form_id" value="12345">
-        <input type="submit" value="Submit Application">
-      </form>
-    </section>
-
-  </main>
-
-  <footer class="main-footer">
-    <p>&copy; 2025 Kakuma Stories | CSS Box Model Practice</p>
-  </footer>
-
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p class="footer-text">
+            © 2024 CSS Box Model Demo. This page demonstrates fundamental CSS concepts 
+            including the box model, typography, and basic layout techniques.
+        </p>
+    </footer>
 </body>
 </html>
+
